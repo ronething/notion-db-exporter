@@ -1,0 +1,31 @@
+{
+  "name": "@ronething/notion-db-exporter",
+  "version": "1.0.0",
+  "description": "notion database exporter",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronething/notion-db-exporter.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "notion",
+    "csv",
+    "export",
+    "database"
+  ],
+  "author": "Ashing Zheng",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "csv-writer": "^1.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
