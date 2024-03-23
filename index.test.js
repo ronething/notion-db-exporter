@@ -7,11 +7,12 @@ describe('exportNotionToCsv', () => {
   test('should create a CSV file', async () => {
     const outputPath = path.join(__dirname, 'output.csv');
     
-    await exportNotionToCsv(); // 假设这会导出到output.csv
+    await exportNotionToCsv();
     
-    // 检查文件是否存在
+    // check file exists
     expect(fs.existsSync(outputPath)).toBe(true);
 
+    // delete file
     fs.unlinkSync(outputPath);
   });
 });
