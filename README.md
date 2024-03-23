@@ -31,7 +31,7 @@ NOTION_DATABASE_ID=your_database_id_here
 After installing the module and setting up your environment variables, you can use the module to export your Notion database to a CSV file. Here's a simple script example:
 
 ```javascript
-const notionExporter = require('notion-db-exporter');
+const notionExporter = require('@ronething/notion-db-exporter');
 
 // Execute the export
 notionExporter.exportNotionToCsv();
