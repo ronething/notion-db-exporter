@@ -1,17 +1,12 @@
-const { Client } = require('@notionhq/client');
+const notion = require('./utils/notionClient');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-
-// Initialize Notion client
-const notion = new Client({
-    auth: process.env.NOTION_TOKEN,
-});
 
 // CSV file configuration
 const csvWriter = createCsvWriter({
     path: 'output.csv', // The output CSV file
     header: [
-        {id: 'name', title: 'Name'},
-        {id: 'url', title: 'URL'}
+        { id: 'name', title: 'Name' },
+        { id: 'url', title: 'URL' }
         // Add more header mappings here based on your Notion database properties
     ]
 });
