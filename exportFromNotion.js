@@ -1,4 +1,4 @@
-const notion = require('./utils/notionClient'); // 引入 Notion 客户端实例
+const notion = require('./utils/notionClient');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 // CSV file configuration
